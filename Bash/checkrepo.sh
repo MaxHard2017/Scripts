@@ -23,7 +23,7 @@ cd ~/projects/Javarush/JavaSyntax/src
 git fetch
 git status
 echo ""
-echo"repo: ~/Documents/Notes"
+echo "repo: ~/Documents/Notes"
 echo "-----------------------"
 echo "checking git status..."
 cd ~/Documents/Notes
