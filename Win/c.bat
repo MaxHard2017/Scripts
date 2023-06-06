@@ -1,1 +1,1 @@
-start "" C:\Users\BFG\Coding\PortableGit\git-bash.exe -c "~/Scripts/Bash/checkallrepos.sh; read"
+start "" C:\Users\BFG\Coding\PortableGit\git-bash.exe -c "~/Scripts/Bash/checkallrepos.sh -f ~/Scripts/Bash/gitrepos.txt; read"
