@@ -55,8 +55,8 @@ do
 	--help | -h) 
 	    echo "HELP: checkallrepos.sh - for analyzing chages of in git repos"
 	    echo "list of repos could be provided in file" 
-	    echo "Usage: ./checkallrepos.sh  -f [life with repo paths]"
-		echo "or ./checkallrepos.sh [path to repo]" 
+	    echo "Usage: ./check_git_repos.sh  -f [life with repo paths]"
+		echo "or ./check_git_repos.sh [path to repo]" 
 	    exit 0;;
 
     *) 
@@ -74,6 +74,6 @@ then
 	exit 1
 else
 	echo "git repo $repo not found!"
-	echo "for help type: ./checkallrepos.sh -h"
+	echo "for help type: ./check_git_repos.sh -h"
 	exit 0
 fi
