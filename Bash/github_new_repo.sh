@@ -29,11 +29,11 @@ fi
 
 # making repo
 echo Let\'s make GitHub repository whith name $repo_name
-curl -L \
+curl -v -L \
   -X POST \
   -H "Accept: application/vnd.github+json" \
   -H "Authorization: Bearer $token" \
   -H "X-GitHub-Api-Version: 2022-11-28" \
   https://api.github.com/user/repos \
-  -d '{"name":"'$repo_name'","description":"CLI made repository","homepage":"https://","private":false,"has_issues":true,"has_projects":true,"has_wiki":true,"has_discussions":false,"auto_init":true,"gitignore_template":"Java","license_template":"CC-BY-4.0","has_downloads":true,"is_template":false}' \
+  -d '{"name":"'$repo_name'","description":"CLI made repository","homepage":"https://","private":true,"has_issues":true,"has_projects":true,"has_wiki":true,"has_discussions":false,"has_downloads":true,"is_template":false}' \
   -k
